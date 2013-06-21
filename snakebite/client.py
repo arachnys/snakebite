@@ -600,7 +600,7 @@ class Client(object):
             if exists:
                 return False
             else:
-                raise e
+                raise
 
     def _handle_test(self, path, node, exists, directory, zero_length):
         return self._is_directory(directory, node) and self._is_zero_length(zero_length, node)

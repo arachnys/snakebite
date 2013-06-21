@@ -44,7 +44,7 @@ def exitError(error):
     elif isinstance(error, RequestError):
         print "Request error: %s" % str(error)
     else:
-        raise error
+        raise
     sys.exit(-1)
 
 
